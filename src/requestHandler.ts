@@ -490,7 +490,7 @@ export default class RequestHandler {
       req.get("Apply-If-Content-Preexists") == "true";
     const trimTargetWhitespace = req.get("Trim-Target-Whitespace") == "true";
     const targetDelimiter = req.get("Target-Delimiter") || "::";
-    const replaceHeading = req.get("Replace-Heading") == "false";
+    const replaceHeading = req.get("Replace-Heading") == "true";
 
     const target =
       targetType == "heading" ? rawTarget.split(targetDelimiter) : rawTarget;
